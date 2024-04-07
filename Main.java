@@ -2,11 +2,10 @@ import geometry.*;
 
 public class Main{
     public static void main(String[] args){
-        Point center = new Point(0.0, 0.0);
-        Circle circle = new Circle(center, 5.0);
-        System.out.println("Circle center: " + circle.getCenter());
-        System.out.println("Circle radius: " + circle.getRadius());
-        System.out.println("Circle perimeter: " + circle.calculatePerimeter());
-        System.out.println("Circle area: " + circle.getArea());
+        ColoredCircle coloredCircle = new ColoredCircle(new Point(1.0, 1.0), 10.0, "red");
+        System.out.println("ColoredCircle center: " + coloredCircle.getCenter());
+        System.out.println("ColoredCircle radius: " + coloredCircle.getRadius());
+        System.out.println("ColoredCircle area: " + coloredCircle.getArea());
+        System.out.println("ColoredCircle color: " + coloredCircle.getColor());
     }
 }
